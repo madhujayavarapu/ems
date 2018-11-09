@@ -1,0 +1,22 @@
+{
+  "name": "employee_management",
+  "version": "1.0.0",
+  "description": "In this we can add an employee and view and edit all employees",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "nodemon": "^1.18.4",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Madhu",
+  "license": "ISC"
+}
