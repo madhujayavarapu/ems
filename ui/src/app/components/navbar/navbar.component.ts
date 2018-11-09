@@ -19,23 +19,23 @@ export class NavbarComponent implements OnInit {
     private route: ActivatedRoute,
     private flashMsgSrv: FlashMessagesService
     ){
-    this.route.params.subscribe((params: Params) => {
-      console.log(params); 
+    // this.route.params.subscribe((params: Params) => {
+    //   this.getUserDetails();
+    // });
+    router.events.subscribe((val) => {
       this.getUserDetails();
-    });
+    })
    }
 
   ngOnInit() {
-    console.log("OnInit");
+    this.getUserDetails();
+  }
+
+  getUserDetails(){
     if(this.authSrv.isLoggedIn()){
       this.username = this.authSrv.getDetailsOfUser("username");
       this.user = this.authSrv.getDetailsOfUser("all");      
     }
-  }
-
-  getUserDetails(){
-    console.log(" get user details");
-    return true;
   }
 
   onLogout(){
