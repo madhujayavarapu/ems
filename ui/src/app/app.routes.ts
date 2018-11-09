@@ -18,44 +18,12 @@ export const appRoutes: Routes = [
     {path:'login', component:LoginComponent},  
     {path:'register', component: RegisterComponent},
     {path:'dashboard',canActivate: [AuthGuard],component: DashboardComponent},
-    {path:'addCompany',canActivate: [AuthGuard], component: AddCompanyComponent
-        // data: {
-        //     expectedRole: 1
-        // } 
-    },
-    {path:'companies', canActivate: [AuthGuard], component: CompaniesListComponent
-        // data: {
-        //     expectedRole: 1
-        // } 
-    },
-    {path:'deleteCompany', canActivate: [AuthGuard], component: DeleteCompanyComponent
-        // data: {
-        //     expectedRole: 1
-        // } 
-    },        
-    {path:'employees',canActivate: [AuthGuard], component: EmpListComponent
-        // data: {
-        //     expectedRole: 2
-        // } 
-    },
-    {path:'employees/unEmpList',canActivate: [AuthGuard], component: UnemplistComponent
-        // data: {
-        //     expectedRole: 2
-        // } 
-    },
-    {path:'employees/unEmpList/addEmployee/:userId', canActivate: [AuthGuard], component: AddEmployeeComponent
-        // data: {
-        //     expectedRole: 2
-        // } 
-    },
-    {path:'deleteEmp',canActivate: [AuthGuard],component: DeleteEmpComponent
-        // data: {
-        //     expectedRole: 2
-        // } 
-    },
-    {path:'addBranch',canActivate: [AuthGuard],component: AddBranchComponent
-        // data: {
-        //     expectedRole: 2
-        // } 
-    }
+    {path:'companies/addCompany',canActivate: [AuthGuard], component: AddCompanyComponent},
+    {path:'companies', canActivate: [AuthGuard], component: CompaniesListComponent},
+    {path:'deleteCompany', canActivate: [AuthGuard], component: DeleteCompanyComponent},        
+    {path:'employees',canActivate: [AuthGuard], component: EmpListComponent},
+    {path:'employees/unEmpList',canActivate: [AuthGuard], component: UnemplistComponent},
+    {path:'employees/unEmpList/addEmployee/:userId', canActivate: [AuthGuard], component: AddEmployeeComponent},
+    {path:'deleteEmp',canActivate: [AuthGuard],component: DeleteEmpComponent},
+    {path:'addBranch',canActivate: [AuthGuard],component: AddBranchComponent}
 ];

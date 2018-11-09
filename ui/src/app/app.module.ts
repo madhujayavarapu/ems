@@ -10,6 +10,7 @@ import { AuthService } from './services/auth.service';
 import { ValidateService } from './services/validate.service';
 import { AdminService } from './services/admin.service';
 import { CadminService } from './services/cadmin.service';
+import { UtilsService } from './services/utils.service';
 import { AuthGuard } from './guard/auth.guard';
 
 import { appRoutes } from './app.routes';
@@ -57,7 +58,8 @@ import { UnemplistComponent } from './components/unemplist/unemplist.component';
     ValidateService,
     CadminService,
     AuthGuard,
-    AdminService
+    AdminService,
+    UtilsService
   ],
   bootstrap: [AppComponent]
 })

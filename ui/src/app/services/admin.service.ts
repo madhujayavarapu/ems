@@ -24,4 +24,12 @@ export class AdminService {
     headers.append('Authorization',token);
     return this.http.post(this.url+"addCompany",company,{headers:headers}).pipe(map((res) => res.json()));
   }
+
+  getCompaniesList(): Observable<any>{
+    let token = this.authSrv.getToken();
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+    headers.append('Authorization',token);
+    return this.http.get(this.url+"getCompaniesList",{headers:headers}).pipe(map((res) => res.json()));
+  }
 }

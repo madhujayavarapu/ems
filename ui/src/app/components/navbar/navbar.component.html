@@ -12,13 +12,13 @@
         </li> -->
 
         <!-- Admin options -->
-        <li *ngIf="authSrv.isLoggedIn() && user.role == 1" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <!-- <li *ngIf="authSrv.isLoggedIn() && user.role == 1" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
           <a class="nav-link" [routerLink]="['/addCompany']">Add Company</a>
         </li>
         <li *ngIf="authSrv.isLoggedIn() && user.role == 1" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
           <a class="nav-link" [routerLink]="['/deleteCompany']">Delete Company</a>
-        </li>
-        <li *ngIf="authSrv.isLoggedIn() && user.role == 1" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        </li> -->
+        <li *ngIf="authSrv.isLoggedIn() && user.role == 1" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:false}">
           <a class="nav-link" [routerLink]="['/companies']">Companies List</a>
         </li>
 

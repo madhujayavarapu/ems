@@ -11,7 +11,8 @@ function formatCompaniesList(companies){
         let obj = {
             id: companies[i]._id,
             companyName: companies[i].companyName,
-            branches: companies[i].branches
+            branches: companies[i].branches,
+            eod: companies[i].establishedDate
         };
         finalList.push(obj);
     }
