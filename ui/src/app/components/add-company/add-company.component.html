@@ -1,0 +1,25 @@
+<div class="container form-container">
+    <form (submit)="addCompany()">
+      <div class="form-group">
+        <label for="cname">Company Name</label>
+        <input type="text" class="form-control" id="cname" name="cname" [(ngModel)]="cname" placeholder="Enter Company Name">
+      </div>
+
+      <div class="form-group">
+        <label for="branch">Branch</label>
+        <input type="text" class="form-control" id="branch" name="branch" [(ngModel)]="branch" placeholder="Enter Branch">
+      </div>
+
+      <div class="form-group">
+        <label for="award">Awards</label>
+        <input type="text" class="form-control" id="award" name="award" [(ngModel)]="award" placeholder="Enter Award">
+      </div>
+
+      <div class="form-group">
+        <label for="edate">Established Date</label>
+        <input type="date" class="form-control" id="edate" name="edate" [(ngModel)]="edate" placeholder="Enter Established Date">
+      </div>
+      
+      <button type="submit" class="btn btn-md btn-primary">Add Company</button>
+    </form>
+  </div>

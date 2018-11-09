@@ -1,0 +1,14 @@
+<div class="container form-container">
+  <form (submit)="onLogin()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="Enter Password">
+    </div>
+    <button type="submit" class="btn btn-md btn-primary">Login</button>
+  </form>
+  <p>New user? <a href="/register">Click here to Signup</a></p>
+</div>

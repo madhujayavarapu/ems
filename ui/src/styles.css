@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+/* loader css */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 250%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    /* border-top: 10px solid #BFBFBF; */
+    border-top: 10px solid blue;    
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-container{
+    box-shadow: 9px 8px 5px 0px ghostwhite;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* background: ghostwhite; */
+}
+.form-container label{
+    font-weight: bold;
+    color: rgb(199, 187, 187);
+}
+.form-container button{
+    margin-bottom: 20px;
+}
+.nav-username{
+    color:#fff;
+    font-weight: 300;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+/* .emp-list{
+    padding: 10px;
+} */
+.emp-list li{
+    padding: 8px;
+}
+
+.pull-right{
+    float: right;
+}
+.panel-title{
+    color: blue;
+}
+
+th{
+    background: cadetblue;
+    color: white;
+    text-align: center;
+}

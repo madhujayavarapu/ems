@@ -1,0 +1,47 @@
+<!-- <div class="container">
+    <h2>List of employees</h2>
+    <ul>
+      <span *ngIf="!noData">
+        <li *ngFor="let emp of employees">
+          <div class="row">
+            <div class="col-md-4">
+              <strong>{{emp.username}}</strong>
+            </div>
+            <div class="col-md-8">
+              <button class="btn btn-primary btn-md pull-right">Add Employee</button>
+            </div>
+          </div>
+        </li>
+      </span>
+    </ul>
+    <span *ngIf = "noData">
+      No Data
+    </span>
+  </div> -->
+
+  <div class="container form-container">
+    <button class="btn btn-md btn-primary pull-right" (click)="getUnEmpList()">Back</button><br/>
+    <hr/>
+    <form (submit)="addEmployee()">
+      <div class="form-group">
+        <label for="empName">Employee Name: </label>
+        <input type="text" class="form-control" id="empName" name="empName" [(ngModel)]="empName" [disabled]="disableEmp">
+      </div>
+      <div class="form-group">
+          <label for="branch">Select list:</label>
+          <select class="form-control" id="branch" name="branch" [(ngModel)]="branch">
+            <option value="-1">Select Branch</option>
+            <option value="{{branch}}" *ngFor="let branch of availableBranches">{{branch}}</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="designation">Designation: </label>
+        <input type="text" class="form-control" id="designation" name="designation" [(ngModel)]="designation" placeholder="Enter Designation">
+      </div>
+      <div class="form-group">
+        <label for="package">Package: (yearly)</label>
+        <input type="text" class="form-control" id="package" name="package" [(ngModel)]="package" placeholder="Enter Package">
+      </div>
+      <button type="submit" class="btn btn-md btn-primary">Recruit Employee</button>
+    </form>
+  </div>

@@ -1,0 +1,42 @@
+<div class="container form-container">
+  <div id="loader" [ngStyle]="{'display': throbber}"></div>
+  <form (submit)="onRegister()">
+    <div class="form-group">
+      <label for="first_name">First Name</label>
+      <input type="text" class="form-control" id="first_name" name="first_name" [(ngModel)]="first_name" placeholder="Enter First Name">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      <input type="text" class="form-control" id="last_name" name="last_name" [(ngModel)]="last_name" placeholder="Enter Last Name">
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" placeholder="Enter username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="Enter Password">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">phone</label>
+      <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="phone" placeholder="Enter Phone Number">
+    </div>
+    <div class="form-group">
+      <label for="district">District</label>
+      <input type="text" class="form-control" id="district" name="district" [(ngModel)]="district" placeholder="Enter District">
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" name="city" [(ngModel)]="city" placeholder="Enter City">
+    </div>
+    <div class="form-group">
+      <label for="pincode">Pin code</label>
+      <input type="text" class="form-control" id="pincode" name="pincode" [(ngModel)]="pincode" placeholder="Enter Pincode">
+    </div>
+    <button type="submit" class="btn btn-md btn-primary">Register</button>
+  </form>
+  <p>Already Registered? <a href="/login">Click here to login</a></p>
+</div>
